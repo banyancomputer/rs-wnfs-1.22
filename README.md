@@ -1,4 +1,5 @@
 <div align="center">
+  <div> <h1> WARNING: this is a forked / downgraded version of rs-wnfs, and won't be able to pull in security fixes. Do not use in production </h1> </div>
   <a href="https://github.com/wnfs-wg" target="_blank">
     <img src="https://raw.githubusercontent.com/wnfs-wg/rs-wnfs/main/assets/logo.png" alt="WNFS Logo" width="100" height="100"></img>
   </a>
