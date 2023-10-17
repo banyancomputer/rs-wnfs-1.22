@@ -310,7 +310,8 @@ where
             );
 
             let node = Rc::make_mut(self);
-
+            node.persisted_as = OnceCell::new();
+            
             // If the bit is not set yet, insert a new pointer.
             if !node.bitmask[bit_index] {
                 node.pointers
@@ -422,6 +423,7 @@ where
             let value_index = self.get_value_index(bit_index);
 
             let node = Rc::make_mut(self);
+            node.persisted_as = OnceCell::new();
 
             Ok(match &mut node.pointers[value_index] {
                 // If there is only one value, we can remove the entire pointer.
